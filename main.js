@@ -7,7 +7,7 @@ let apiKey = 'e6a08763cdce8cb3637e718d93a2601d'
 let latitude
 let longitude
 
-fetch(`http://api.openweathermap.org/geo/1.0/direct?q=${cityname},${countryCode}&appid=${apiKey}`)
+fetch(`https://api.openweathermap.org/geo/1.0/direct?q=${cityname},${countryCode}&appid=${apiKey}`)
     .then(res => res.json())
     .then(data => {
         latitude = data[0].lat
